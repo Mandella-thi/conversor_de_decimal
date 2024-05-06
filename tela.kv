@@ -1,0 +1,23 @@
+<RootWidget>:
+    GridLayout:
+        cols:1
+        padding:20
+
+        TextInput:
+            id: input_field
+            hint_text: "Digite o numero"
+            multiline: False
+
+        Button:
+            text: "Converter para Octal"
+            on_release: app.calcular('octal')
+
+        Button:
+            text: "Converter para Binário"
+            on_release:app.calcular('binario')
+
+        Button:
+            text: "Converter para Hexadecimal"
+            on_release: app.calcular('hexadecimal')
+        Label:
+            id: resultado_label
